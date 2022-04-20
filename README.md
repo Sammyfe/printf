@@ -1,35 +1,64 @@
-Title:
-_printf
-The _printf function is a custom implementation of the C programming function printf. It returns the number of characters printed and writes the output to stdout. It includes the conversion specifiers : c, s, %, d, x, X, u, o, rot13 and i.
+A simple printf function built by Adegbite quadri and Adekunle prisca for Alx software Engineering School.
 
-Description:
-The described _printf function produces an output format based on the identifiers that are listed below. When the function is successful, it returns the length of the string passed, and returns (-1) when the function fails.
+#Welcome
 
-Format identifiers:
-%c: Prints a character
-%s: Prints a string
-%d: Prints integers
-%i: Prints integers
-%b: Prints the binary representation of the unsigned decimal
-%u: Prints integers that are unsigned
-%x: Prints lowercase hexadecimal
-%X: Prints uppercase hexadecimal
-%r: Prints a reversed string
-%R: Prints the passed string in Rot13.
+Rebuild of the standard printf function in C. Our project required a function capable of printing with the %d, %c, %s, and %% specifiers to standard output. printf returns the number of characters printed (excluding the null byte at the end of strings). We were not asked to handle flag characters, field width, precision, or length.
 
-Usage:
-All the files are to be compiled on Ubuntu 14.04 LTS
-Compile your code with gcc -Wall -Werror -Wextra -pedantic *.c
-Include the main.h header file on the functions using the _printf
+#Format Specifiers
 
-Example:
-#include main.h
-_printf(The %s ran %d times! -%c boy, 10, 'C');
+Our team chose to add %x ,%X, %b, %o, %u, %r, %R, and %p formatting. We relied on the library we have been building at Alx as well as new concepts gathered during this project.
 
-return 0;
+#Supported Format Types
 
-Output:
-The boy ran 10 times! -C
+TYPE - OUTPUT
 
-Project by:
-sammyfe 
+c - Single character
+
+s - String
+
+r - String in reverse
+
+R - String in rot13
+
+d - Integer in decimal
+
+i - integer
+
+% - Percent sign
+
+Xl - Lowercase hex
+
+X - Uppercase hex
+
+b - binary
+
+o - octal
+
+u - unsigned
+
+p - pointer
+
+F - expletive
+
+#Examples
+
+Character: printf(%c, A); Output:: A
+
+String: printf(%s, This is a string.); Output: This is a string.
+
+Integer: printf(%i, 5); Output: 5
+
+Expletive: printf(%F, anything); Output: FUCK
+
+#Requirements
+
+Allowed editors: vi, vim, emacs All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89 All your files should end with a new line A README.md file, at the root of the folder of the project is mandatory Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl You are not allowed to use global variables No more than 5 functions per file In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples The prototypes of all your functions should be included in your header file called main.h Don’t forget to push your header file All your header files should be include guarded Note that we will not provide the _putchar function for this project GitHub There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.
+
+#Authorized functions and macros
+
+write (man 2 write) malloc (man 3 malloc) free (man 3 free) va_start (man 3 va_start) va_end (man 3 va_end) va_copy (man 3 va_copy) va_arg (man 3 va_arg)
+
+#Authors
+Abdul Samuel
+Olorunda Ayo
+
