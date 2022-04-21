@@ -1,4 +1,4 @@
-A simple printf function built by Adegbite quadri and Adekunle prisca for Alx software Engineering School.
+A simple printf function built by Abdul Samuel and Olorunda Ayo Isaac for Alx software Engineering School.
 
 #Welcome
 
